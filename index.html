@@ -1,47 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Shakrit - Phase 2</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shakrit</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Title / Simple overlay -->
-  <div id="overlay" class="overlay">
-    <h1>Shakrit</h1>
-    <button id="startBtn">Start Game</button>
+  <div id="title-screen">
+    <h1>🔥 Shakrit 🔥</h1>
+    <button id="start-btn">Start Game</button>
   </div>
 
-  <!-- Game container -->
-  <div id="gameWrap" class="game-wrap" style="display:none;">
-    <canvas id="gameCanvas" width="800" height="400"></canvas>
+  <canvas id="gameCanvas" width="960" height="540"></canvas>
 
-    <!-- On-screen controls -->
-    <div id="controls" class="controls">
-      <div class="left-group">
-        <button id="leftBtn" class="ctrl">◄</button>
-        <button id="rightBtn" class="ctrl">►</button>
-        <button id="jumpBtn" class="ctrl">▲</button>
-      </div>
-      <div class="right-group">
-        <button id="shootBtn" class="ctrl big">FIRE</button>
-      </div>
-    </div>
-
-    <!-- HUD -->
-    <div id="hud" class="hud">
-      <span id="score">Score: 0</span>
-      <span id="lives">Lives: 3</span>
-      <button id="pauseBtn" class="small">Pause</button>
-    </div>
-  </div>
-
-  <!-- Pause menu -->
-  <div id="pauseMenu" class="overlay" style="display:none;">
-    <h2>Paused</h2>
-    <button id="resumeBtn">Resume</button>
-    <button id="restartBtn">Restart</button>
+  <!-- On-screen buttons -->
+  <div id="controls">
+    <div id="left" class="ctrl">←</div>
+    <div id="right" class="ctrl">→</div>
+    <div id="jump" class="ctrl">⤒</div>
+    <div id="fire" class="ctrl">🔥</div>
   </div>
 
   <script src="script.js"></script>
